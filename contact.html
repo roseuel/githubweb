@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    .contact-container {
+      width: 500px;
+      height: 500px;
+      background-color: #122def;
+      padding: 20px;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+	  margin-left: 40%;
+    }
+    
+    .contact-heading {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 100px;
+    }
+    
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .contact-input {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+        .contact-submit {
+      background-color:#ececf536;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    
+    .contact-submit:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h2 class="contact-heading">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" class="contact-input" placeholder="Name">
+      <input type="email" class="contact-input" placeholder="Email">
+      <textarea class="contact-input" placeholder="Message"></textarea>
+      <button type="submit" class="contact-submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+ 
